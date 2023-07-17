@@ -1,0 +1,80 @@
+/* outter containers control */
+.mRecentVideoPerform{
+    background: #282828;
+    max-width: 392px;
+    border-radius: 4px;
+}
+
+.mRecentVideoPerform--container{
+    padding: 24px;
+}
+
+.mRecentVideoPerform--container--title, 
+.mRecentVideoPerform--container--videoImage--videoNamecontainer--videoName,
+.mRecentVideoPerform--container--metrics--metric--data {
+    color: #fff;
+    font-family: "Roboto","Noto",sans-serif;
+}
+
+
+.mRecentVideoPerform--container--title{
+    margin: 0px;
+    padding-bottom: 14px;
+    font-size: 18px;
+}
+
+/* video image container */
+.mRecentVideoPerform--container--videoImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+}
+
+.mRecentVideoPerform--container--videoImage--img{
+    width: 100%;
+}
+
+.mRecentVideoPerform--container--videoImage--videoNamecontainer{
+    position: absolute;
+    padding: 0 20px;
+    bottom: 16px;
+}
+
+.mRecentVideoPerform--container--videoImage--videoNamecontainer--videoName{
+    height: 44px;
+    line-height: 24px;
+    margin: 0;
+    padding-right: 24px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* metrics container */
+.mRecentVideoPerform--container--metrics{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid #3a3a3a;
+}
+
+.mRecentVideoPerform--container--metrics--metric{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.mRecentVideoPerform--container--metrics--metric--iconContainer{
+    width: 18px;
+}
+
+.mRecentVideoPerform--container--metrics--metric--data{
+    font-size: 13px;
+    margin-left: 8px;
+}
