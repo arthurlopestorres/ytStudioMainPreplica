@@ -1,8 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* state control */
+.hide {
+    display: none!important;
+}
+
+.hideFlex{
+    max-height: 0px;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.showFlex{
+    max-height: 200px;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
 /* outter containers control */
 .mRecentVideoPerform{
     background: #282828;
     max-width: 392px;
     border-radius: 4px;
+    border-color: #aaa;
 }
 
 .mRecentVideoPerform--container{
@@ -11,7 +36,11 @@
 
 .mRecentVideoPerform--container--title, 
 .mRecentVideoPerform--container--videoImage--videoNamecontainer--videoName,
-.mRecentVideoPerform--container--metrics--metric--data {
+.mRecentVideoPerform--container--metrics--wrapper--metric--data,
+.mRecentVideoPerform--container--dataWrapper--currentDaysCount,
+.mRecentVideoPerform--container--dataWrapper--dataList--data--title,
+.mRecentVideoPerform--container--dataWrapper--dataList--data--value--amount,
+.mRecentVideoPerform--container--menu--link--text {
     color: #fff;
     font-family: "Roboto","Noto",sans-serif;
 }
@@ -56,25 +85,127 @@
 /* metrics container */
 .mRecentVideoPerform--container--metrics{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-direction: row;
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 0.5px solid #3a3a3a;
+    /* margin-bottom: 20px; */
 }
 
-.mRecentVideoPerform--container--metrics--metric{
+.mRecentVideoPerform--container--metrics--wrapper{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.mRecentVideoPerform--container--metrics--arrow{
+    width: 24px;
+}
+
+.mRecentVideoPerform--container--metrics--wrapper--metric{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 24px;
 }
 
-.mRecentVideoPerform--container--metrics--metric--iconContainer{
+.mRecentVideoPerform--container--metrics--wrapper--metric--iconContainer{
     width: 18px;
 }
 
-.mRecentVideoPerform--container--metrics--metric--data{
+.mRecentVideoPerform--container--metrics--wrapper--metric--data{
     font-size: 13px;
     margin-left: 8px;
+}
+
+.mRecentVideoPerform--container--metrics--arrow-collapseArrow{
+    cursor: pointer;
+}
+
+.mRecentVideoPerform--container--metrics--arrow-collapseArrow:hover path{
+    fill: #fff;
+}
+
+.mRecentVideoPerform--container--metrics--arrow-expandArrow{
+    cursor: pointer;
+}
+
+.mRecentVideoPerform--container--metrics--arrow-expandArrow:hover path{
+    fill: #fff;
+}
+
+/* dataWrapper container */
+.mRecentVideoPerform--container--dataWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--currentDaysCount{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList {
+    margin: 0;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList--data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList--data--title{
+    font-size: 13px;
+    padding-top: 2px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList:last-child{
+    padding-bottom: 20px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList--data--value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+.mRecentVideoPerform--container--dataWrapper--dataList--data--value.first{
+    cursor: pointer!important;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList--data--value--amount{
+    font-size: 13px;
+    margin-right: 8px;
+    padding-top: 2px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList--data--value--icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList--data--value.first:hover path{
+    fill: #fff;
+}
+
+/* menu container */
+.mRecentVideoPerform--container--menu--link--text.first{
+    margin-bottom: 20px;
+}
+
+.mRecentVideoPerform--container--menu--link--text{
+    font-size: 14px;
+    color: #3ea6ff;
+    font-weight: bold;
+    text-transform: uppercase;   
 }
