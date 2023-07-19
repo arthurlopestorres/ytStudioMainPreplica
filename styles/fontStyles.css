@@ -45,3 +45,8 @@
     color: #aaa;
     font-weight: bold;
 }
+
+/* transform */
+.text-uppercase{
+    text-transform: uppercase;
+}

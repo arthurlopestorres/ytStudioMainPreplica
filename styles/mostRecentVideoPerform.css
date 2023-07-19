@@ -1,4 +1,4 @@
-/* state control */
+/* state */
 .hide {
     display: none!important;
 }
@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-/* outter containers control */
+/* outter containers */
 .mRecentVideoPerform{
     background: #282828;
     max-width: 392px;
@@ -32,7 +32,7 @@
     padding-bottom: 14px;
 }
 
-/* video image container */
+/* videoImage container */
 .mRecentVideoPerform--container--videoImage{
     display: flex;
     flex-direction: column;
@@ -68,7 +68,6 @@
     padding-top: 16px;
     padding-bottom: 16px;
     border-bottom: 0.5px solid #3a3a3a;
-    /* margin-bottom: 20px; */
 }
 
 .mRecentVideoPerform--container--metrics--wrapper{
@@ -174,8 +173,4 @@
 /* menu container */
 .mRecentVideoPerform--container--menu--link--text.first{
     margin-bottom: 20px;
-}
-
-.mRecentVideoPerform--container--menu--link--text{
-    text-transform: uppercase;   
 }
