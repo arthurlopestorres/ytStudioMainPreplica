@@ -1,0 +1,47 @@
+/* family and weight */
+.text{
+    font-family: "Roboto","Noto",sans-serif;
+}
+.text-bold{
+    font-family: "Roboto","Noto",sans-serif;
+    font-weight: bold;
+}
+
+/* size */
+.text-small {
+    font-size: 13px;
+}
+
+.text-medium{
+    font-size: 16px;
+}
+
+.text-large{
+    font-size: 18px;
+}
+
+/* color and weight */
+.text-white{
+    color: #fff;
+}
+.text-white-bold{
+    color: #fff;
+    font-weight: bold;
+}
+
+.text-blue{
+    color: #3ea6ff;
+}
+
+.text-blue-bold{
+    color: #3ea6ff;
+    font-weight: bold;
+}
+
+.text-grey{
+    color: #aaa;
+}
+.text-grey-bold{
+    color: #aaa;
+    font-weight: bold;
+}
