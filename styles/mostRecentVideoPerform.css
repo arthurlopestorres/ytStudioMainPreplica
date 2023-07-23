@@ -49,7 +49,7 @@
 .mRecentVideoPerform--container--videoImage--videoNamecontainer{
     position: absolute;
     padding: 0 20px;
-    bottom: 16px;
+    bottom: 12px;
 }
 
 .mRecentVideoPerform--container--videoImage--videoNamecontainer--videoName{
@@ -133,7 +133,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+}
+
+.mRecentVideoPerform--container--dataWrapper--dataList--data:last-child{
+    margin-bottom: 10px;
 }
 
 .mRecentVideoPerform--container--dataWrapper--dataList--data--title{
@@ -172,5 +176,5 @@
 
 /* menu container */
 .mRecentVideoPerform--container--menu--link--text.first{
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 }

@@ -1,19 +1,27 @@
+:root{
+    --text-color-primary: #fff;
+    --text-color-secodary: #3ea6ff;
+    --text-color-terciary: #aaa;
+    --text-fontWeightModifier: bold;
+    --text-fontFamily: "Roboto","Noto",sans-serif;
+}
+
 /* family and weight */
 .text{
-    font-family: "Roboto","Noto",sans-serif;
+    font-family: var(--text-fontFamily);
 }
 .text-bold{
-    font-family: "Roboto","Noto",sans-serif;
-    font-weight: bold;
+    font-family: var(--text-fontFamily);
+    font-weight: var(--text-fontWeightModifier);
 }
 
 /* size */
-.text-small {
+.text-small{
     font-size: 13px;
 }
 
 .text-medium{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .text-large{
@@ -21,29 +29,30 @@
 }
 
 /* color and weight */
-.text-white{
-    color: #fff;
-}
-.text-white-bold{
-    color: #fff;
-    font-weight: bold;
+.textColor-primary{
+    color: var(--text-color-primary);
 }
 
-.text-blue{
-    color: #3ea6ff;
+.textColor-primary-bold{
+    color: var(--text-color-primary);
+    font-weight: var(--text-fontWeightModifier);
 }
 
-.text-blue-bold{
-    color: #3ea6ff;
-    font-weight: bold;
+.textColor-secondary{
+    color: var(--text-color-secodary);
 }
 
-.text-grey{
-    color: #aaa;
+.textColor-secondary-bold{
+    color: var(--text-color-secodary);
+    font-weight: var(--text-fontWeightModifier);
 }
-.text-grey-bold{
-    color: #aaa;
-    font-weight: bold;
+
+.textColor-terciary{
+    color: var(--text-color-terciary);
+}
+.textColor-terciary-bold{
+    color: var(--text-color-terciary);
+    font-weight: var(--text-fontWeightModifier);
 }
 
 /* transform */
