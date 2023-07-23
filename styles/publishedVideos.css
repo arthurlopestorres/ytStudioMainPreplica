@@ -1,0 +1,105 @@
+@import url('./components/elementsGeneralParams.css');
+
+/* state controls */
+.hide{
+    display: none!important;
+}
+
+/* container styles */
+.publishedVideos{
+    background: var(--components--mainbox-backgroundColor);
+    max-width: var(--components--mainBox-maxWidth);
+    border-radius: var(--components--mainBox-borderRadius);
+    border-color: var(--components--mainBox-borderColor);
+    z-index: -1;
+}
+
+.publishedVideos--innerContainer{
+    padding: var(--components--innerContainer-padding);
+    z-index: -1;
+}
+
+.publishedVideos--innerContainer--title{
+    margin-bottom: 27px;
+}
+
+.publishedVideos--innerContainer--videosList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: -1;
+}
+
+.publishedVideos--innerContainer--videosList--video{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    max-height: 48px;
+    margin-bottom: 22px;
+    z-index: 1;
+}
+
+.publishedVideos--innerContainer--VideosList--infosContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 8px;
+    height: 32px;
+    z-index: -1;
+}
+
+.publishedVideos--innerContainer--videosList--optionsContainer{
+    width: 100%;
+}
+
+.publishedVideos--innerContainer--VideosList--infosContainer--metrics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 15px;
+    z-index: -1;
+}
+
+
+
+/* innerElement styles */
+.publishedVideos--innerContainer--videosList--image {
+    max-width: 56px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.publishedVideos--innerContainer--VideosList--infosContainer--videoTitle{
+    word-spacing: -0.83px;
+    white-space: nowrap;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 283px;
+    cursor: default;
+    z-index: -1;
+}
+
+.publishedVideos--innerContainer--VideosList--infosContainer--metrics--icon{
+    width: 18px;
+    height: 16px;
+    fill: #aaa;
+    margin-right: 4px;
+    z-index: -1;
+}
+
+.publishedVideos--innerContainer--VideosList--infosContainer--metrics--data{
+    margin-right: 40px;
+    cursor: default;
+}
+
+.publishedVideos--innerContainer--videosList--optionsContainer--icon{
+    width: 18px;
+    height: 16px;
+    fill: #aaa;
+    margin-right: 4px;
+    z-index: -1;
+}

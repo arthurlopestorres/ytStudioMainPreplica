@@ -1,3 +1,4 @@
+@import url('./components/elementsGeneralParams.css');
 /* state */
 .hide {
     display: none!important;
@@ -17,19 +18,19 @@
 
 /* outter containers */
 .mRecentVideoPerform{
-    background: #282828;
-    max-width: 392px;
-    border-radius: 4px;
-    border-color: #aaa;
+    background: var(--components--mainbox-backgroundColor);
+    max-width: var(--components--mainBox-maxWidth);
+    border-radius: var(--components--mainBox-borderRadius);
+    border-color: var(--components--mainBox-borderColor);
 }
 
 .mRecentVideoPerform--container{
-    padding: 24px;
+    padding: var(--components--innerContainer-padding);
 }
 
 .mRecentVideoPerform--container--title{
-    margin: 0px;
-    padding-bottom: 14px;
+    margin: var(--components--innerContainer--title-margin);
+    padding-bottom: var(--components--innerContainer--title-paddingBottom);
 }
 
 /* videoImage container */
