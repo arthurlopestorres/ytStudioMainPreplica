@@ -1,4 +1,4 @@
-export function treatTextLength(elementIdentifier: string, textMaxLength: number): any{
+export function treatTextLength(elementIdentifier: string, textMaxLength: number){
     const textElements: any = document.querySelectorAll(elementIdentifier)
 
     textElements.forEach(element => {
@@ -8,6 +8,7 @@ export function treatTextLength(elementIdentifier: string, textMaxLength: number
             element.textContent = finalText
         }
     })
+    return false
 }
 
 export default { treatTextLength }
