@@ -8,6 +8,7 @@ export function treatTextLength(elementIdentifier, textMaxLength) {
             element.textContent = finalText;
         }
     });
+    return false;
 }
 export default { treatTextLength };
 //# sourceMappingURL=treatsTextLength.js.map
