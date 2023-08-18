@@ -1,0 +1,84 @@
+@import url(./components/elementsGeneralParams.css);
+
+
+.mostRecentPost{
+    background: var(--components--mainbox-backgroundColor);
+    max-width: var(--components--mainBox-maxWidth);
+    border-radius: var(--components--mainBox-borderRadius);
+    border-color: var(--components--mainBox-borderColor);
+    padding: var(--components--innerContainer-padding);   
+}
+
+.mostRecentPost--containerTitle{
+    margin-bottom: 26px;
+}
+
+.mostRecentPost--mainContent--profileData{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mostRecentPost--mainContent--profileData--item{
+    margin-right: 10px;
+}
+
+.mostRecentPost--mainContent--profileData--dot{
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: #aaa;
+    border-radius: 50%;
+}
+
+.mostRecentPost--mainContent--profileData--profileImg{
+    width: 24px;
+    border-radius: 50%;
+}
+
+.mostRecentPost--mainContent--textContainer{
+    padding-bottom: 21px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 380px;
+}
+
+.mostRecentPost--mainContent--textContainer--text{
+    display: -webkit-box;
+    max-height: 80px;
+    max-width: 380px;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.mostRecentPost--likesComments{
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.mostRecentPost--linksComments--likes{
+    margin-right: 80px;
+}
+
+.mostRecentPost--linksComments--likes > p:nth-of-type(1), .mostRecentPost--linksComments--comments > p:nth-of-type(1){
+    margin-bottom: 10px;
+}
+
+.mostRecentPost--linksComments--likes > p:nth-of-type(2), .mostRecentPost--linksComments--comments > p:nth-of-type(2){
+    font-size: 19px;
+}
+
+.mostRecentPost--personalComment{
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 28px;
+}
+
+.mostRecentPost--link{
+    display: block;
+    height: 18px;
+}
