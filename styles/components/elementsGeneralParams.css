@@ -9,4 +9,6 @@
     /* innerContainerTitle */
     --components--innerContainer--title-margin: 0px;
     --components--innerContainer--title-paddingBottom: 14px;
+    /* colors */
+    --quaternaryColor: #ff4e45;
 }

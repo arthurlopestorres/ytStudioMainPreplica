@@ -2,7 +2,8 @@
     --text-color-primary: #fff;
     --text-color-secodary: #3ea6ff;
     --text-color-terciary: #aaa;
-    --text-fontWeightModifier: bold;
+    --text-color-quaternary: #ff4e45;
+    --text-fontWeightModifier: 600;
     --text-fontFamily: "Roboto","Noto",sans-serif;
 }
 
@@ -50,9 +51,14 @@
 .textColor-terciary{
     color: var(--text-color-terciary);
 }
+
 .textColor-terciary-bold{
     color: var(--text-color-terciary);
     font-weight: var(--text-fontWeightModifier);
+}
+
+.textColor-quaternary{
+    color: var(--text-color-quaternary);
 }
 
 /* transform */

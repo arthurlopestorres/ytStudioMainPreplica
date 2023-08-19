@@ -11,6 +11,7 @@
     max-width: var(--components--mainBox-maxWidth);
     border-radius: var(--components--mainBox-borderRadius);
     border-color: var(--components--mainBox-borderColor);
+    box-sizing: border-box;
 }
 
 .publishedVideos--innerContainer{
@@ -121,7 +122,6 @@
 
 .publishedVideos--innerContainer--videosList--video--infos{
     position: relative;
-    margin-left: 10px;
 }
 
 .publishedVideos--innerContainer--videosList--video:hover .publishedVideos--innerContainer--VideosList--infosContainer{

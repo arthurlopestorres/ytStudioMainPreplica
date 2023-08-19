@@ -1,0 +1,151 @@
+@import url(./components/elementsGeneralParams.css);
+
+.mainMenu{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 185px 1fr;
+    grid-template-areas: 
+    'profile'
+    'options'
+    'resources';
+    background: var(--components--mainbox-backgroundColor);
+    max-width: 255px;
+    border-radius: var(--components--mainBox-borderRadius);
+    border-color: var(--components--mainBox-borderColor);
+    padding: 24px 0px 0px 0px;
+    box-sizing: border-box;
+}
+
+/*! Profile */
+.mainMenu--profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: profile;
+    position: relative;
+}
+
+.mainMenu--profile--img{
+    width: 112px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.mainMenu--profile--overImg{
+    width: 114px;
+    height: 112px;
+    position: absolute;
+    left: 70px;
+    z-index: 2;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0%;
+}
+
+.mainMenu--profile--overImg--overIcon{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 40px;
+    left: 47px;
+    fill: #fff;
+    opacity: 100%;
+    z-index: 1;
+}
+
+.mainMenu--profile--overImg--iconShadow--text{
+    width: 112px;
+    position: absolute;
+    top: 80px;
+    left: -6px;
+    content: "Ver o canal no YouTube";
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: #535353;
+    opacity: 0%;
+    transition: opacity 0.5s;
+    transition-timing-function: cubic-bezier(0.99, -0.44, 0.1, 0.46);
+    z-index: 1;
+}
+
+.mainMenu--profile--overImg--iconShadow{
+    position: absolute;
+    width: 114px;
+    top: -1px;
+    height: 114px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 50%;
+}
+
+.mainMenu--profile--overImg:hover{
+    opacity: 100%;
+}
+
+.mainMenu--profile--overImg:hover .mainMenu--profile--overImg--iconShadow--text{
+    opacity: 90%;
+}
+
+.mainMenu--profile--title{
+    margin-bottom: 8px;
+}
+
+/*! Options */
+.mainMenu--options{
+    grid-area: options;
+}
+
+.mainMenu--options--option{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0px 16px 0px 24px;
+    cursor: pointer;
+    fill: #aaa;
+    color: #aaa;
+    opacity: 90%;
+}
+
+.mainMenu--options--option--icon{
+    width: 24px!important;
+    height: 24px!important;
+    margin-right: 24px;
+    fill: inherit;
+}
+
+.mainMenu--options--option--icon--iconSelected{
+    width: 24px!important;
+    height: 24px!important;
+    margin-right: 24px;
+    fill: var(--quaternaryColor);
+}
+
+.mainMenu--options--option--text{
+    color: inherit;
+}
+
+.mainMenu--options--option:hover {
+    background: #1b1b1b;
+}
+
+.mainMenu--resources{
+    grid-area: resources;
+}
+
+/*! Estates */
+.selected{
+    background-color: #1b1b1b;
+    padding: 0px 16px 0px 20px;
+    border-left: 4px solid var(--quaternaryColor);
+    color: var(--quaternaryColor);
+}
+
+.hidden{
+    display: none!important;
+}

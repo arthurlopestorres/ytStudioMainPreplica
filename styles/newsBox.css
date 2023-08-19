@@ -1,0 +1,28 @@
+@import url(./components/elementsGeneralParams.css);
+
+.newsBox{
+    background: var(--components--mainbox-backgroundColor);
+    max-width: var(--components--mainBox-maxWidth);
+    border-radius: var(--components--mainBox-borderRadius);
+    border-color: var(--components--mainBox-borderColor);
+    padding: var(--components--innerContainer-padding);
+    box-sizing: border-box;
+}
+
+.newsBox--mainTitle{
+    margin-bottom: 21px;
+}
+
+.newsBox--mainContent--banner{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.newsBox--mainContent--title{
+    margin-bottom: 12px;
+}
+
+.newsBox--mainContent--text{
+    line-height: 20px;
+    margin-bottom: 21px;
+}

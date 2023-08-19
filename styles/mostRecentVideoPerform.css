@@ -22,6 +22,7 @@
     max-width: var(--components--mainBox-maxWidth);
     border-radius: var(--components--mainBox-borderRadius);
     border-color: var(--components--mainBox-borderColor);
+    box-sizing: border-box;
 }
 
 .mRecentVideoPerform--container{

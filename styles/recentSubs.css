@@ -1,0 +1,38 @@
+@import url(./components/elementsGeneralParams.css);
+
+.recentSubs{
+    background: var(--components--mainbox-backgroundColor);
+    max-width: var(--components--mainBox-maxWidth);
+    border-radius: var(--components--mainBox-borderRadius);
+    border-color: var(--components--mainBox-borderColor);
+    padding: var(--components--innerContainer-padding); 
+    box-sizing: border-box;
+}
+
+.recentSubs--titleAndDaysRange{
+    margin-bottom: 26px;
+}
+
+.recentSubs--titleAndDaysRange--title{
+    margin-bottom: 8px;
+}
+
+.recentSubs--subscribers{
+    margin-bottom: 30px;
+}
+
+.recentSubs--subscribers--subscriber{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.recentSubs--subscribers--subscriber--img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.recentSubs--subscribers--subscriber--nameAndSubs--name{
+    margin-bottom: 7px;
+}

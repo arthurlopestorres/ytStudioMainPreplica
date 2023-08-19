@@ -1,0 +1,109 @@
+@import url(./components/elementsGeneralParams.css);
+
+.channelStatistics{
+    background-color: var(--components--mainbox-backgroundColor);
+    border-radius: var(--components--mainBox-borderRadius);
+    border-color: var(--components--mainBox-borderColor);
+    max-width: var(--components--mainBox-maxWidth);
+    padding: var(--components--innerContainer-padding);
+    box-sizing: border-box;
+}
+
+/* first block */
+
+.channelStatistics--titleAndSubs--subs{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 18px;
+}
+
+.channelStatistics--titleAndSubs--mainTitle{
+    margin-bottom: 18px;
+}
+
+.channelStatistics--titleAndSubs--subs > p:nth-of-type(1){
+    margin-bottom: 6px;
+}
+
+.channelStatistics--titleAndSubs--subs--subsCountNumber{
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* second block */
+
+.channelStatistics--summary{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+}
+
+.channelStatistics--summary--titleIntro{
+    margin-bottom: 14px;
+}
+
+.channelStatistics--summary--titleIntro > p:nth-of-type(1){
+    margin-bottom: 8px;
+}
+
+.channelStatistics--summary--dataRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.channelStatistics--summary--dataRow div{
+    display: flex;
+    align-items: center;
+}
+
+.channelStatistics--summary--dataRow div > p{
+    margin-right: 8px;
+}
+
+.channelStatistics--summary--arrowIcon{
+    max-width: 16px;
+    fill: #aaa;
+}
+
+/* third block */
+
+.channelStatistics--mainVideo--titleIntro{
+    margin-bottom: 19px; 
+}
+
+.channelStatistics--mainVideo--titleIntro > p:nth-of-type(1){
+    margin-bottom: 6px;
+}
+
+.channelStatistics--mainVideo--titleIntro > p:nth-of-type(2){
+    display: flex;
+    align-items: center;
+}
+
+.channelStatistics--mainVideo--titleIntro--dot{
+    display: inline-block;
+    width: 2px;
+    height: 1px;
+    background-color: #aaa;
+    margin: 0px 4px 0px 4px;
+}
+
+.channelStatistics--mainVideos--videosList{
+    margin-bottom: 35px;
+}
+
+.channelStatistics--mainVideos--videosList--video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.channelStatistics--mainVideos--videosList--video--title{
+    max-width: 374px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
