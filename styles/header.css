@@ -1,0 +1,6 @@
+@import url(./components/elementsGeneralParams.css);
+
+.mainHeader{
+    background: var(--components--mainbox-backgroundColor);
+    box-shadow: 2px 2px 2px 2px black;
+}

@@ -1,0 +1,32 @@
+@import url(./components/elementsGeneralParams.css);
+@import url(./components/fontStyles.css);
+
+.mainFooter--linksList{
+    display: flex;
+}
+
+.mainFooter--linksList--Link{
+    margin-right: 38px;
+}   
+
+.mainFooter--linksList--Link a{
+    display: flex;
+}
+
+.mainFooter--linksList--Link--text{
+    margin-right: 3px;
+}
+
+.mainFooter--linksList--link--icon{
+    opacity: 0%;
+    width: 16px;
+    fill: var(--text-color-secodary);
+}
+
+.mainFooter--linksList--Link:hover .mainFooter--linksList--Link--text{
+    color: var(--text-color-secodary);
+}
+
+.mainFooter--linksList--Link:hover .mainFooter--linksList--link--icon{
+    opacity: 100%;
+}

@@ -1,0 +1,78 @@
+@import url(./components/elementsGeneralParams.css);
+
+.introSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.introSection--options{
+    display: flex;
+}
+
+.introSection--options--option{
+    background-color: #272727;
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 16px;
+    cursor: pointer;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    z-index: 1;
+}
+
+.introSection--options--option--icon{
+    fill: #aaa;
+    width: 24px!important;
+    height: 24px!important;
+    opacity: 90%;
+}
+
+.introSection--options--option--labelText-first, .introSection--options--option--labelText-second, .introSection--options--option--labelText-third{
+    position: absolute; 
+    top: 46px;  
+    font-size: 10px;
+    color: #fff;
+    background-color: #616161;
+    padding: 7px;
+    border-radius: 7px;
+    opacity: 0%;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    transition-timing-function: cubic-bezier(0.99, -0.44, 0.1, 0.46);
+    z-index: 1;
+}
+
+.introSection--options--option--labelText-first{
+    right: -22px;
+    width: 66px;
+}
+.introSection--options--option--labelText-second{
+    right: -33px;
+    width: 86px;
+}
+.introSection--options--option--labelText-third{
+    right: -25px;
+    width: 74px;
+}
+
+.introSection--options--option:hover .introSection--options--option--icon{
+    fill: #fff;
+}
+
+.introSection--options--option-first:hover .introSection--options--option--labelText-first{
+    opacity: 100%;
+    visibility: visible;
+}
+
+.introSection--options--option-second:hover .introSection--options--option--labelText-second{
+    opacity: 100%;
+    visibility: visible;
+}
+
+.introSection--options--option-third:hover .introSection--options--option--labelText-third{
+    opacity: 100%;
+    visibility: visible;
+}

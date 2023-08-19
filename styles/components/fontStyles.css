@@ -29,6 +29,10 @@
     font-size: 18px;
 }
 
+.text-largest{
+    font-size: 24px;
+}
+
 /* color and weight */
 .textColor-primary{
     color: var(--text-color-primary);
