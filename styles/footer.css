@@ -3,6 +3,7 @@
 
 .mainFooter--linksList{
     display: flex;
+    height: 48px;
 }
 
 .mainFooter--linksList--Link{

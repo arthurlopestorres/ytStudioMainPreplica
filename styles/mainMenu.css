@@ -1,17 +1,12 @@
 @import url(./components/elementsGeneralParams.css);
 
 .mainMenu{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 185px 1fr;
-    grid-template-areas: 
-    'profile'
-    'options'
-    'resources';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 65px);
+    width: 255px;
     background: var(--components--mainbox-backgroundColor);
-    max-width: 255px;
-    border-radius: var(--components--mainBox-borderRadius);
     border-color: var(--components--mainBox-borderColor);
     padding: 24px 0px 0px 0px;
     box-sizing: border-box;
@@ -24,6 +19,7 @@
     align-items: center;
     grid-area: profile;
     position: relative;
+    margin-bottom: 16px;
 }
 
 .mainMenu--profile--img{
@@ -37,7 +33,7 @@
     width: 114px;
     height: 112px;
     position: absolute;
-    left: 70px;
+    left: 58px;
     z-index: 2;
     border-radius: 50%;
     cursor: pointer;
@@ -49,14 +45,14 @@
     width: 24px;
     height: 24px;
     top: 40px;
-    left: 47px;
+    left: 43px;
     fill: #fff;
     opacity: 100%;
     z-index: 1;
 }
 
 .mainMenu--profile--overImg--iconShadow--text{
-    width: 112px;
+    width: 124px;
     position: absolute;
     top: 80px;
     left: -6px;
@@ -76,9 +72,9 @@
 
 .mainMenu--profile--overImg--iconShadow{
     position: absolute;
-    width: 114px;
-    top: -1px;
-    height: 114px;
+    width: 112px;
+    height: 112px;
+    left: -2px;
     border-radius: 50%;
     background-color: black;
     opacity: 50%;
@@ -97,9 +93,6 @@
 }
 
 /*! Options */
-.mainMenu--options{
-    grid-area: options;
-}
 
 .mainMenu--options--option{
     display: flex;
@@ -132,10 +125,6 @@
 
 .mainMenu--options--option:hover {
     background: #1b1b1b;
-}
-
-.mainMenu--resources{
-    grid-area: resources;
 }
 
 /*! Estates */

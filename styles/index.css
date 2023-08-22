@@ -1,0 +1,64 @@
+html, body{
+    background-color: #1b1b1b;
+    overflow: hidden;
+}
+
+.mainHeader{
+    position: relative;
+    z-index: 1;
+}
+
+.mainContent{
+    display: flex;
+}
+
+.mainContent--data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 22px;
+    overflow: scroll;
+}
+
+.mainContent--data::-webkit-scrollbar{
+    width: 16px;
+}
+
+.mainContent--data::-webkit-scrollbar-thumb{
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #606060;
+}
+
+.mainContent--data-widthHelper{
+    max-width: 1220px;
+}
+
+.mainContent--data--panels{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.mainMenu {
+    border-right: 1px solid #4e4e4e8f;
+}
+
+.introSection{
+    margin-bottom: 22px;
+}
+
+.mainContent--data--panels--panelsColumn--panel{
+    border: 1px solid #4e4e4e8f;
+    margin: 0px 22px 22px 0px;
+}
+
+.newsBox{
+    margin-right: 0px;
+}
+
+.mainFooter{
+    margin-bottom: 16px;
+}
