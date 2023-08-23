@@ -20,7 +20,7 @@ Experience gathered:
 6- In general: HTML5, CSS3 and Javascript(TS) manipulation
 
 ///////////
-Challanges faced:
+challenges faced:
 1- I had to search for a way to use modules (node.js) to export and import TS files amongst each other. At the beginning, for some reason, importing a TS file in another TS file was not allowing the code to be read properly which caused a "xxxxx is not defined" bug quite difficult to figure out how to fix, but I managed and I'm happy about it.
 2- I wasn't used to manipulating opacity in elements to make the hover effect in css so I faced some dificulties manipulating only display: none; which made learn how to manipulate opacity and visibility to reach the expect behavior quite easier.
 3- I also faced some dificulties with CSS animations. I googled and figured out how to implement customed transitioning to create some sort of "delay" when hover is applied.
