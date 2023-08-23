@@ -6,4 +6,4 @@ HTML5
 CSS3
 JavaScript/Typescript
 
-Resolutions supported: 1920x1080px
+Resolutions supported (width): any >= 768px
