@@ -13,7 +13,7 @@ Resolutions supported (width): any >= 768px
 ///////////
 Experience gathered:
 1- I had to learn and practice manipulating image properties (SVGs);
-2- I learned and practiced css in some specific ways such as changing scrollbar properties and manipulating element's estate to make sure it fit the expected behavior
+2- I learned and practiced css in some specific ways such as changing scrollbar properties and manipulating element's state to make sure it fit the expected behavior
 3- This was the first project I used Typescript and css rooting, so there is certainly a lot to improve there.
 4- I compartimentalized components of the page to make it easier to manipulate and fix behavior separetly (the css is in different files as well as the js).
 5- I changed configs of the tsconfig.json file to make Typescript help me code better and faster.
