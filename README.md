@@ -1,5 +1,5 @@
 # ytStudioMainPreplica
-In this basic training project, I replicate YouTube Studio's Main Page with it's basic functionalities.
+In this basic training project, I replicated YouTube Studio's Main Page and it's basic functionalities.
 
 ///////////
 Tecnologies envolved:
